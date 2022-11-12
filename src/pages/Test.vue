@@ -13,6 +13,7 @@
 <script setup lang="ts">
 import { AppButton } from '@/common'
 const handleClick = () => {
+  /* eslint-disable-next-line */
   console.log(document.querySelector('meta[property="og:description"]'))
 }
 document

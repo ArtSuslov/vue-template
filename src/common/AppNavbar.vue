@@ -5,9 +5,12 @@ import { AppLogo } from '@/common'
 <template>
   <div class="app-navbar">
     <app-logo class="app-navbar__logo" />
-    <router-link class="app-navbar__link" to="/"> Home </router-link>
-    <router-link class="app-navbar__link" to="/test"> Test
-</router-link>
+    <router-link class="app-navbar__link" to="/">
+      {{ $t('test.test') }}
+    </router-link>
+    <router-link class="app-navbar__link" to="/test">
+      {{ $t('test.test') }}
+    </router-link>
   </div>
 </template>
 
