@@ -18,6 +18,11 @@ const routes: Array<RouteRecordRaw> = [
     name: ROUTE_NAMES.uiKit,
     component: () => import('@/pages/UiKitPage.vue'),
   },
+  {
+    path: '/test',
+    name: ROUTE_NAMES.test,
+    component: () => import('@/pages/Test.vue'),
+  },
 ]
 
 const router = createRouter({
