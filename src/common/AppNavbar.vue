@@ -5,6 +5,9 @@ import { AppLogo } from '@/common'
 <template>
   <div class="app-navbar">
     <app-logo class="app-navbar__logo" />
+    <router-link class="app-navbar__link" to="/"> Home </router-link>
+    <router-link class="app-navbar__link" to="/test"> Test
+</router-link>
   </div>
 </template>
 
@@ -25,6 +28,16 @@ import { AppLogo } from '@/common'
   @include respond-to(xsmall) {
     width: 100%;
     margin-bottom: toRem(24);
+  }
+}
+
+.app-navbar__link {
+  margin-left: toRem(24);
+  text-decoration: none;
+  transition: color 0.25s;
+
+  &:hover {
+    color: var(--tertiary-dark);
   }
 }
 </style>
